@@ -10,3 +10,5 @@ http://danielbeard.wordpress.com
 Copyright (C) 2012 Daniel Beard
  
 Distributed under [MIT License](http://opensource.org/licenses/mit-license.php)
+
+![Image](http://i.imgur.com/xmKHY.png)
