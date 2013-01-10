@@ -20,7 +20,7 @@
  */
 
 #import "NSObject+DBValidator.h"
-#import <objc/objc-runtime.h>
+#import <objc/runtime.h>
 
 #define VALIDATION_RULES_KEY @"validationruleskey"
 
