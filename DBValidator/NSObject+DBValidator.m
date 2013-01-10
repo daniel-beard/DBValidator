@@ -26,8 +26,6 @@
 
 @implementation NSObject (DBValidator)
 
-
-
 -(void) setValidationRules:(NSMutableArray *)validationRules {
     objc_setAssociatedObject(self, VALIDATION_RULES_KEY, validationRules, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

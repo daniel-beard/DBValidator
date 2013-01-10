@@ -31,6 +31,9 @@
 /** The failure message when validation fails */
 @property (nonatomic, copy) NSString *failureMessage;
 
+/** Property that sets if the item being validated can be nil and still pass */
+@property (nonatomic) BOOL canBeNil;
+
 /** Base class init method. This is the designated constructor for this class.
  All subclasses should call this method in their custom init methods
  */

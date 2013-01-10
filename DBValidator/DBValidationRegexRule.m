@@ -43,6 +43,10 @@
     
     NSString *stringToEvaluate = [self.object valueForKey:self.keyPath];
     
+    //return yes if string is allowed to be empty and is empty
+    if (stringToEvaluate.length == 0 && self.canBeNil)
+        return YES;
+    
     NSPredicate *regexPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES[cd] %@", self.regexString];
     return [regexPredicate evaluateWithObject:stringToEvaluate];
     
