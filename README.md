@@ -1,5 +1,6 @@
 DBValidator
 ===========
+[![Build Status](https://travis-ci.org/daniel-beard/DBValidator.png?branch=master)](https://travis-ci.org/daniel-beard/DBValidator)
 
 General purpose validation framework for objective-c / iOS.
 
