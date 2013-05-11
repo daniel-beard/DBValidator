@@ -12,6 +12,8 @@
 		2B5850B9173E37AD003F2D71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DA0CBB169CFC0200CE09AD /* Foundation.framework */; };
 		2B5850BF173E37AD003F2D71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B5850BD173E37AD003F2D71 /* InfoPlist.strings */; };
 		2B5850C2173E37AD003F2D71 /* DBValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5850C1173E37AD003F2D71 /* DBValidatorTests.m */; };
+		2B5850CB173E49EB003F2D71 /* DBStringLengthRuleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5850CA173E49EB003F2D71 /* DBStringLengthRuleTests.m */; };
+		2B5850D1173E4A62003F2D71 /* DBDummyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5850D0173E4A62003F2D71 /* DBDummyClass.m */; };
 		65071148169D3EF700489DA0 /* DBValidationNumberRangeRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 65071147169D3EF700489DA0 /* DBValidationNumberRangeRule.m */; };
 		65DA0CBA169CFC0200CE09AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DA0CB9169CFC0200CE09AD /* UIKit.framework */; };
 		65DA0CBC169CFC0200CE09AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DA0CBB169CFC0200CE09AD /* Foundation.framework */; };
@@ -50,6 +52,9 @@
 		2B5850C0173E37AD003F2D71 /* DBValidatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBValidatorTests.h; sourceTree = "<group>"; };
 		2B5850C1173E37AD003F2D71 /* DBValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBValidatorTests.m; sourceTree = "<group>"; };
 		2B5850C3173E37AD003F2D71 /* DBValidatorTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBValidatorTests-Prefix.pch"; sourceTree = "<group>"; };
+		2B5850CA173E49EB003F2D71 /* DBStringLengthRuleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBStringLengthRuleTests.m; sourceTree = "<group>"; };
+		2B5850CF173E4A62003F2D71 /* DBDummyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDummyClass.h; sourceTree = "<group>"; };
+		2B5850D0173E4A62003F2D71 /* DBDummyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDummyClass.m; sourceTree = "<group>"; };
 		65071146169D3EF700489DA0 /* DBValidationNumberRangeRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBValidationNumberRangeRule.h; sourceTree = "<group>"; };
 		65071147169D3EF700489DA0 /* DBValidationNumberRangeRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBValidationNumberRangeRule.m; sourceTree = "<group>"; };
 		65DA0CB5169CFC0200CE09AD /* DBValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +117,10 @@
 			children = (
 				2B5850C0173E37AD003F2D71 /* DBValidatorTests.h */,
 				2B5850C1173E37AD003F2D71 /* DBValidatorTests.m */,
+				2B5850CA173E49EB003F2D71 /* DBStringLengthRuleTests.m */,
 				2B5850BB173E37AD003F2D71 /* Supporting Files */,
+				2B5850CF173E4A62003F2D71 /* DBDummyClass.h */,
+				2B5850D0173E4A62003F2D71 /* DBDummyClass.m */,
 			);
 			path = DBValidatorTests;
 			sourceTree = "<group>";
@@ -326,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5850C2173E37AD003F2D71 /* DBValidatorTests.m in Sources */,
+				2B5850CB173E49EB003F2D71 /* DBStringLengthRuleTests.m in Sources */,
+				2B5850D1173E4A62003F2D71 /* DBDummyClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

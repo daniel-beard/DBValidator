@@ -6,7 +6,8 @@ General purpose validation framework for objective-c / iOS.
 
 Supports adding validation rules to any keypath on an NSObject.
 
-http://danielbeard.wordpress.com
+* http://danielbeard.io
+* http://danielbeard.wordpress.com
 
 Copyright (C) 2013 Daniel Beard
  
