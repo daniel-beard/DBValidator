@@ -135,6 +135,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2B5850D2173E5256003F2D71 /* Number Rules */ = {
+			isa = PBXGroup;
+			children = (
+				65071146169D3EF700489DA0 /* DBValidationNumberRangeRule.h */,
+				65071147169D3EF700489DA0 /* DBValidationNumberRangeRule.m */,
+			);
+			name = "Number Rules";
+			sourceTree = "<group>";
+		};
 		65DA0CAA169CFC0200CE09AD = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +218,7 @@
 		65DA0CE9169D0D6D00CE09AD /* Validation Rules */ = {
 			isa = PBXGroup;
 			children = (
+				2B5850D2173E5256003F2D71 /* Number Rules */,
 				65DA0CE6169D083000CE09AD /* DBValidationStringLengthRule.h */,
 				65DA0CE7169D083000CE09AD /* DBValidationStringLengthRule.m */,
 				65DA0CEA169D0E1000CE09AD /* DBValidationRegexRule.h */,
@@ -217,8 +227,6 @@
 				65DA0CEE169D128300CE09AD /* DBValidationEmailRule.m */,
 				65DA0CF0169D17D300CE09AD /* DBValidationEqualityRule.h */,
 				65DA0CF1169D17D300CE09AD /* DBValidationEqualityRule.m */,
-				65071146169D3EF700489DA0 /* DBValidationNumberRangeRule.h */,
-				65071147169D3EF700489DA0 /* DBValidationNumberRangeRule.m */,
 			);
 			name = "Validation Rules";
 			sourceTree = "<group>";

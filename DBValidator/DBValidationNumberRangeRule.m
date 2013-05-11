@@ -22,14 +22,14 @@
 
 @interface DBValidationNumberRangeRule ()
 
-@property (nonatomic, assign) double minValue;
-@property (nonatomic, assign) double maxValue;
+@property (nonatomic, strong) NSNumber *minValue;
+@property (nonatomic, strong) NSNumber *maxValue;
 
 @end
 
 @implementation DBValidationNumberRangeRule
 
--(id) initWithObject:(id)object keyPath:(NSString *)keyPath minNumberValue:(double)minValue maxNumberValue:(double)maxValue failureMessage:(NSString *)failureMessage {
+-(id) initWithObject:(id)object keyPath:(NSString *)keyPath minNumberValue:(NSNumber*)minValue maxNumberValue:(NSNumber*)maxValue failureMessage:(NSString *)failureMessage {
     
     if (self = [super initWithObject:object keyPath:keyPath failureMessage:failureMessage]) {
         self.minValue = minValue;
@@ -41,11 +41,12 @@
 -(BOOL) passesValidation {
     
     if (self.object == nil || self.keyPath == nil) [NSException raise:@"Object or keypath is nil" format:@"Object and keypath must have a non-nil value"];
-    
-    double numberValue = [[self.object valueForKey:self.keyPath] doubleValue];
-    
-    if (numberValue < self.minValue) return NO;
-    if (numberValue > self.maxValue) return NO;
+   
+    NSNumber *numberValue = [self.object valueForKey:self.keyPath];
+
+    //Compare to min & max values
+    if ([numberValue compare:self.minValue] == NSOrderedAscending) return NO;
+    if ([numberValue compare:self.maxValue] == NSOrderedDescending) return NO;
     
     return YES;
 }
