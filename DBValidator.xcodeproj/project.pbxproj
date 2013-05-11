@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5850B7173E37AD003F2D71 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5850B6173E37AD003F2D71 /* SenTestingKit.framework */; };
+		2B5850B8173E37AD003F2D71 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DA0CB9169CFC0200CE09AD /* UIKit.framework */; };
+		2B5850B9173E37AD003F2D71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DA0CBB169CFC0200CE09AD /* Foundation.framework */; };
+		2B5850BF173E37AD003F2D71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B5850BD173E37AD003F2D71 /* InfoPlist.strings */; };
+		2B5850C2173E37AD003F2D71 /* DBValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5850C1173E37AD003F2D71 /* DBValidatorTests.m */; };
 		65071148169D3EF700489DA0 /* DBValidationNumberRangeRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 65071147169D3EF700489DA0 /* DBValidationNumberRangeRule.m */; };
 		65DA0CBA169CFC0200CE09AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DA0CB9169CFC0200CE09AD /* UIKit.framework */; };
 		65DA0CBC169CFC0200CE09AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DA0CBB169CFC0200CE09AD /* Foundation.framework */; };
@@ -27,7 +32,24 @@
 		65DA0CF2169D17D300CE09AD /* DBValidationEqualityRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0CF1169D17D300CE09AD /* DBValidationEqualityRule.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2B5850C7173E37BD003F2D71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65DA0CAC169CFC0200CE09AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65DA0CB4169CFC0200CE09AD;
+			remoteInfo = DBValidator;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2B5850B5173E37AC003F2D71 /* DBValidatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBValidatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B5850B6173E37AD003F2D71 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2B5850BC173E37AD003F2D71 /* DBValidatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DBValidatorTests-Info.plist"; sourceTree = "<group>"; };
+		2B5850BE173E37AD003F2D71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2B5850C0173E37AD003F2D71 /* DBValidatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBValidatorTests.h; sourceTree = "<group>"; };
+		2B5850C1173E37AD003F2D71 /* DBValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBValidatorTests.m; sourceTree = "<group>"; };
+		2B5850C3173E37AD003F2D71 /* DBValidatorTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBValidatorTests-Prefix.pch"; sourceTree = "<group>"; };
 		65071146169D3EF700489DA0 /* DBValidationNumberRangeRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBValidationNumberRangeRule.h; sourceTree = "<group>"; };
 		65071147169D3EF700489DA0 /* DBValidationNumberRangeRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBValidationNumberRangeRule.m; sourceTree = "<group>"; };
 		65DA0CB5169CFC0200CE09AD /* DBValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +84,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2B5850B1173E37AC003F2D71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B5850B7173E37AD003F2D71 /* SenTestingKit.framework in Frameworks */,
+				2B5850B8173E37AD003F2D71 /* UIKit.framework in Frameworks */,
+				2B5850B9173E37AD003F2D71 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65DA0CB2169CFC0200CE09AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,10 +107,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5850BA173E37AD003F2D71 /* DBValidatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B5850C0173E37AD003F2D71 /* DBValidatorTests.h */,
+				2B5850C1173E37AD003F2D71 /* DBValidatorTests.m */,
+				2B5850BB173E37AD003F2D71 /* Supporting Files */,
+			);
+			path = DBValidatorTests;
+			sourceTree = "<group>";
+		};
+		2B5850BB173E37AD003F2D71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B5850BC173E37AD003F2D71 /* DBValidatorTests-Info.plist */,
+				2B5850BD173E37AD003F2D71 /* InfoPlist.strings */,
+				2B5850C3173E37AD003F2D71 /* DBValidatorTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		65DA0CAA169CFC0200CE09AD = {
 			isa = PBXGroup;
 			children = (
 				65DA0CBF169CFC0200CE09AD /* DBValidator */,
+				2B5850BA173E37AD003F2D71 /* DBValidatorTests */,
 				65DA0CB8169CFC0200CE09AD /* Frameworks */,
 				65DA0CB6169CFC0200CE09AD /* Products */,
 			);
@@ -88,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				65DA0CB5169CFC0200CE09AD /* DBValidator.app */,
+				2B5850B5173E37AC003F2D71 /* DBValidatorTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +152,7 @@
 				65DA0CB9169CFC0200CE09AD /* UIKit.framework */,
 				65DA0CBB169CFC0200CE09AD /* Foundation.framework */,
 				65DA0CBD169CFC0200CE09AD /* CoreGraphics.framework */,
+				2B5850B6173E37AD003F2D71 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,6 +218,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2B5850B4173E37AC003F2D71 /* DBValidatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B5850C6173E37AD003F2D71 /* Build configuration list for PBXNativeTarget "DBValidatorTests" */;
+			buildPhases = (
+				2B5850B0173E37AC003F2D71 /* Sources */,
+				2B5850B1173E37AC003F2D71 /* Frameworks */,
+				2B5850B2173E37AC003F2D71 /* Resources */,
+				2B5850B3173E37AC003F2D71 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B5850C8173E37BD003F2D71 /* PBXTargetDependency */,
+			);
+			name = DBValidatorTests;
+			productName = DBValidatorTests;
+			productReference = 2B5850B5173E37AC003F2D71 /* DBValidatorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		65DA0CB4169CFC0200CE09AD /* DBValidator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65DA0CD9169CFC0200CE09AD /* Build configuration list for PBXNativeTarget "DBValidator" */;
@@ -202,11 +276,20 @@
 			projectRoot = "";
 			targets = (
 				65DA0CB4169CFC0200CE09AD /* DBValidator */,
+				2B5850B4173E37AC003F2D71 /* DBValidatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2B5850B2173E37AC003F2D71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B5850BF173E37AD003F2D71 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65DA0CB3169CFC0200CE09AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,7 +304,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B5850B3173E37AC003F2D71 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2B5850B0173E37AC003F2D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B5850C2173E37AD003F2D71 /* DBValidatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65DA0CB1169CFC0200CE09AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,7 +348,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2B5850C8173E37BD003F2D71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65DA0CB4169CFC0200CE09AD /* DBValidator */;
+			targetProxy = 2B5850C7173E37BD003F2D71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		2B5850BD173E37AD003F2D71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B5850BE173E37AD003F2D71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		65DA0CC2169CFC0200CE09AD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,6 +384,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2B5850C4173E37AD003F2D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DBValidator.app/DBValidator";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBValidatorTests/DBValidatorTests-Prefix.pch";
+				INFOPLIST_FILE = "DBValidatorTests/DBValidatorTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2B5850C5173E37AD003F2D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DBValidator.app/DBValidator";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DBValidatorTests/DBValidatorTests-Prefix.pch";
+				INFOPLIST_FILE = "DBValidatorTests/DBValidatorTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		65DA0CD7169CFC0200CE09AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -329,6 +494,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DBValidator/DBValidator-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "DBValidator/DBValidator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -338,6 +504,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2B5850C6173E37AD003F2D71 /* Build configuration list for PBXNativeTarget "DBValidatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B5850C4173E37AD003F2D71 /* Debug */,
+				2B5850C5173E37AD003F2D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		65DA0CAF169CFC0200CE09AD /* Build configuration list for PBXProject "DBValidator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

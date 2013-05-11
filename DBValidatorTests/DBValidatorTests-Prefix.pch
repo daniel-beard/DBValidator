@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'DBValidatorTests' target in the 'DBValidatorTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
