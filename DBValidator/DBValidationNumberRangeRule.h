@@ -23,6 +23,6 @@
 
 @interface DBValidationNumberRangeRule : DBValidationRule
 
--(id) initWithObject:(id)object keyPath:(NSString *)keyPath minNumberValue: (NSNumber) minValue maxNumberValue: (NSNumber) maxValue failureMessage:(NSString *)failureMessage;
+-(id) initWithObject:(id)object keyPath:(NSString *)keyPath minNumberValue: (NSNumber*) minValue maxNumberValue: (NSNumber*) maxValue failureMessage:(NSString *)failureMessage;
 
 @end

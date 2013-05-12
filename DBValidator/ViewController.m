@@ -47,10 +47,12 @@
     //Email Rule
     DBValidationEmailRule *emailRule = [[DBValidationEmailRule alloc] initWithObject:self.textFieldEmail keyPath:@"text" failureMessage:@"Not a valid email address"];
     [self.textFieldEmail addValidationRule:emailRule];
-    
+   
+#warning fix this later
+    /*
     DBValidationNumberRangeRule *numberRangeRule = [[DBValidationNumberRangeRule alloc] initWithObject:self.textField1 keyPath:@"text" minNumberValue:20 maxNumberValue:100 failureMessage:@"Number must be between 20 and 100"];
     [self.textField1 addValidationRule:numberRangeRule];
-    
+    */
     
     //Equality Rule
     DBValidationEqualityRule *equalityRule = [[DBValidationEqualityRule alloc] initWithObject1:self.textField1 object2:self.textField2 keyPath:@"text" failureMessage:@"Both text fields must be equal"];
